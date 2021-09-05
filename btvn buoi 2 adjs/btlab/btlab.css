@@ -1,0 +1,23 @@
+*:before, *:after {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    ;
+}
+  .navbar{
+
+    display: flex;
+    padding: 2% 6%;
+    justify-content:space-around;
+    align-items:center;
+    flex: 1;
+    text-align: right;
+    
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+    
+}

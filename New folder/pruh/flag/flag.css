@@ -1,0 +1,73 @@
+.container{
+    background-color: white;
+    width: 420px;
+    height: 400px;
+    margin: auto;
+}
+.inside1{
+    background-color: blue;
+    width: 140px;
+    height: 100%;
+    float: left;
+}
+.inside2{
+    background-color: white;
+    width: 140px;
+    height: 100%;
+    float: left;
+}
+
+.inside3{
+    background-color: red;
+    width: 140px;
+    height: 100%;
+    float: left;
+}
+.container2{
+    background-color: white;
+    width: 450px;
+    height: 400px;
+    margin: 120px auto;
+}
+.bentrong1{
+    background-color: green;
+    width: 150px;
+    height: 100%;
+    float: left;
+}
+.bentrong2{
+    background-color:white;
+    width: 150px;
+    height: 100%;
+    float: left;
+}
+.bentrong3{
+    background-color:red;
+    width: 150px;
+    height: 100%;
+    float: left;
+}
+.container3{
+    display: flex;
+    border: 5px solid gray;
+    height: 400;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+}
+.flag1{
+    background-color: black;
+    height: 100px;
+    width: 100%;
+}
+.flag2{
+    background-color:red;
+    height: 100px;
+    width: 100%;
+}
+.flag3{
+    background-color: yellow;
+    height: 100px;
+    width: 100%;
+}
+

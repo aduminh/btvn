@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="re.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="muclienhe">
+        <h1>Register</h1>
+        <div class="border"></div>
+        <form class="contactform" action="contact.html" method="post">
+            <input type="text" class="contactformtext" placeholder="Name" id="name">
+            <input type="text" class="contactformtext" placeholder="Email" id="mail">
+            <input type="text" class="contactformtext" placeholder="password" id="password">
+            <input type="text" class="contactformtext" placeholder="reenter password" id="repassword">
+            <input type="submit" value="Create Account" class="btn" onclick="registration()" >
+        </form>
+        
+    </div>
+    <script>
+        function registration()
+	{
+
+		var name= document.getElementById("name").value;
+		var email= document.getElementById("mail").value;
+		var passwd= document.getElementById("password").value;			
+		var repasswd= document.getElementById("repassword").value;
+
+        if(name=='')
+		{
+			alert('Please enter your name');
+		}
+		else if(email=='')
+		{
+			alert('Please enter your user email');
+		}
+		else if(passwd=='')
+		{
+			alert('Please enter Password');
+		}
+		else if(repasswd=='')
+		{
+			alert('Enter Confirm Password');
+		}
+		else if(passwd != repasswd)
+		{
+			alert ('Password not Matched');
+        }
+        else
+        {
+            alert('You have logged in')
+        }
+    }
+    </script>
+    
+</body>
+</html>

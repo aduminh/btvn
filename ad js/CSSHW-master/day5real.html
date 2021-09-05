@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="day5real.css">
+</head>
+<body>
+    <div class="hello">
+
+    </div>
+    <div class="all_product" id="all">
+        <div class="product_container">
+            <div class="product_img">
+                <img src="./new-product.jpg">
+            </div>
+            <div class="title_container" >
+                <a class="title">Bot my</a>
+            </div>
+            <div class="price_container">
+                <p class="price"><span>đ</span>1000-<span>đ</span>5000</p>
+            </div>
+            <div class="product__footer">
+                <i
+                  class="product__footer-left far fa-heart"
+                  onclick="getName('${product.name}')"
+                ></i>
+                <div class="product__footer-right">
+                  <div class="product__footer-right-rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="product__footer-right-sold">Đã bán 20K</div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div id="fav">
+        <h1>San pham ua thich</h1>
+        <p>Bot my</p>
+    </div>
+</body>
+</html>

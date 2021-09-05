@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="another.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container--product">
+        <div class="container__title">
+          <div class="container__title-text">Tất cả</div>
+          <div class="container__title-border"></div>
+        </div>
+        <div id="allProducts" class="container__product">
+          <!-- Start product -->
+
+          <!-- End product -->
+        </div>
+      </div>
+      <div class="container--favourite">
+        <div class="container__favourite-title">Sản phẩm yêu thích</div>
+        <div id="container__favourite-show">
+          
+        </div>
+      </div>
+    </div>
+    <div class="all_product" id="all">
+        <div class="product_container">
+            <div class="product_img">
+                <img src="./new-product.jpg">
+            </div>
+            <div class="title_container" >
+                <a class="title">Bot my</a>
+            </div>
+            <div class="price_container">
+                <p class="price"><span>đ</span>1000-<span>đ</span>5000</p>
+            </div>
+            <div class="product__footer">
+                <i
+                  class="product__footer-left far fa-heart"
+                  onclick="getName('${product.name}')"
+                ></i>
+                <div class="product__footer-right">
+                  <div class="product__footer-right-rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="product__footer-right-sold">Đã bán 20K</div>
+                </div>
+              </div>
+        </div>
+    </div>
+    <div id="fav">
+        <h1>San pham ua thich</h1>
+    </div>
+</body>
+</html>
+    <script>
+        const products = [
+            {
+                img : 'new-product.jpg',
+                title : "bot my",
+                pricemin : 1000,
+                pricemax : 3000,
+                sold : "20k"
+            },
+            {
+                img : 'new-product.jpg',
+                title : "bot my1",
+                pricemin : 1000,
+                pricemax : 3000,
+                sold : "20k"
+            },
+        ]
+        let productHTML = ""
+        for (product of products) {
+            console.log(product)
+            productHTML += `
+            <div class="product_container">
+            <div class="product_img">
+                <img src="./new-product.jpg">
+            </div>
+            <div class="title_container" >
+                <a class="title">${product.title}</a>
+            </div>
+            <div class="price_container">
+                <p class="price"><span>đ</span>${product.pricemin}-<span>đ</span>${product.pricemax}</p>
+            </div>
+            <div class="product__footer">
+                <i
+                  class="product__footer-left far fa-heart"
+                  onclick="getName('${product.title}')"
+                ></i>
+                <div class="product__footer-right">
+                  <div class="product__footer-right-rate">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                  <div class="product__footer-right-sold">${product.sold}</div>
+                </div>
+              </div>
+        </div>
+        
+            `
+        }
+        let productFAV
+        document.getElementById("all").innerHTML = productHTML
+        if (localStorage.getItem("productFAV") !== null) {
+            productFAV = localStorage.getItem("productFAV"); 
+            productFAV = JSON.parse(productFAV); 
+        } 
+        else {
+            productFAV = [];
+        }
+        function getName(title){
+            productFAV.push(title)
+            localStorage.setItem("productFavourite", JSON.stringify(productFAV));
+            read()
+        }
+        function read(){
+            let productFavHTML = ""
+            // for (sanpham of productFAV) {
+            //     productFavHTML += `
+            //     <p>hey</p>
+            //     `
+            // }
+            for (let i = 0; i < productFAV.length; i++) {
+            productFavHTML += `
+                <p onclick="removeProductFAV(${i})">${productFAV[i]}</p>
+            `;
+            }
+            document.getElementById("fav_container").innerHTML =
+            productFavHTML;
+        }
+        function removeProductFAV(i) {
+            productFAV.splice(i, 1);
+            localStorage.setItem("productFAV", JSON.stringify(productFAV));
+            read();
+        }
+        read();
+    </script>
+  </body>
+</html>

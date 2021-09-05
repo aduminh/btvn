@@ -1,0 +1,12 @@
+.outside{
+    position: relative;
+    margin: 20px 50px;
+    color: red;
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+.star{ 
+    position: relative;
+    color: yellow;
+}

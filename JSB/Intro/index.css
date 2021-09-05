@@ -1,0 +1,22 @@
+h2{
+    color: red;
+}
+
+p{
+    color: brown;
+}
+
+#list{
+    background-color: cadetblue;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.color-blue{
+    color: blue
+}
+
+.font-large{
+    font-size: large;
+}
+.margin{margin-left: 110px;}

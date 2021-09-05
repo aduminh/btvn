@@ -1,0 +1,58 @@
+*{margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+.muclienhe{
+    background: url(bg.png) no-repeat center;
+    background-size: cover;
+    padding: 40px 0;
+    background-image: url(https://images.unsplash.com/photo-1503435824048-a799a3a84bf7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8cmFpbnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60g);
+}
+.muclienhe h1{
+    text-align: center;
+    color: orchid;
+}
+
+
+.contactform{
+    max-width: 600px;
+    margin: auto;
+    padding: 0 10px;
+    overflow: hidden;
+
+}
+.contactformtext{
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 16px 0;
+    border: 0;
+    border: 0;
+    background:yellow;
+    padding: 20px 40px;
+    outline: none;
+    color: black;
+    transition: 0.5s;
+
+
+}
+.contactformtext:focus{
+    box-shadow: 0 0 10px 4px #063361;
+}
+textarea.contactformtext{
+    resize: none;
+    height: 120px;
+
+}
+.contactformbtn{
+    float: right;
+    border: 0;
+    background: greenyellow;
+    color: white;
+    padding: 12px 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+

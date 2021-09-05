@@ -1,0 +1,15 @@
+h1,p,a{
+    display: inline;
+}
+.highlight{
+    background-color: blue;
+}
+.margin{
+    margin: 180px;
+}
+.padding{
+    padding: 30px;
+}
+.border{
+    border: 1px dashed red;
+}

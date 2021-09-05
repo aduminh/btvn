@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Bên phía HTML hãy tạo một thẻ div có màu bất kỳ. 
+  Hãy viết một đoạn code thực hiện chức năng khi di chuột vào thẻ div sẽ chuyển màu,
+  khi di chuột ra sẽ trở về màu cũ. */
+  
+  /* div {
+    width: 200px;
+    height: 200px;
+    background: red;
+    transition: 2s;
+    transition-property: width;
+    transition-timing-function: linear;
+  }
+  div:hover {
+    background: blue;
+    width: 400px;
+  } */
+  
+  .container__part5 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    height: 530px;
+  }
+  
+  .container__part5-content {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    /* align-items: center; */
+  }
+  
+  .part5__content-title h2 {
+    font-size: 40px;
+    font-weight: 200;
+  }
+  
+  .border__bottom {
+    width: 15%;
+    border-bottom: 2px solid orange;
+  }
+  
+  .part5__content-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .part5__content-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .input-feedback {
+    width: 70%;
+    display: flex;
+    margin: 10px 0px;
+    align-items: center;
+  }
+  
+  .input-feedback label {
+    flex: 4;
+  }
+  
+  .input-feedback .input {
+    flex: 6;
+    height: 30px;
+  }
+  
+  .input-feedback select {
+    flex: 6;
+    height: 30px;
+  }
+  
+  .input-checkbox {
+    display: flex;
+    flex: 6;
+    justify-content: flex-start;
+  }
+  
+  .input-checkbox input {
+    width: 10% !important;
+  }
+  
+  textarea {
+    flex: 6;
+    height: 100px;
+  }
+  
+  .button-send {
+    text-align: center;
+    height: 40px;
+  }
+  
+  .button-send button {
+    width: 15%;
+    height: 100%;
+    color: white;
+    background: orange;
+    border: none;
+    border-radius: 30px;
+  }
+  
+  .input-checkbox .checkbox {
+    margin-right: 6px;
+    /* width: 4% !important; */
+  }
+  
+  .container__footer {
+    margin-top: 50px;
+    width: 100%;
+    height: 200px;
+    background: rgb(0 0 0);
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .container__footer-left ul {
+    display: flex;
+    width: 85%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .container__footer-left {
+    width: 30%;
+  }
+  
+  li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 100;
+  }
+  
+  i.fab.fa-facebook-square {
+    color: white;
+    font-size: 25px;
+  }
+  
+  i.fab.fa-twitter-square {
+    color: white;
+    font-size: 25px;
+  }
+  
+  i.fab.fa-google-plus-g {
+    color: white;
+    font-size: 25px;
+  }
+  
+  i.fab.fa-instagram {
+    color: white;
+    font-size: 25px;
+  }
+  
+  .container__footer-right {
+    width: 13%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }

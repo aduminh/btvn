@@ -1,0 +1,12 @@
+.container{
+    background-color: white ;
+    height: 450px;
+    width: 450px;
+    float: left
+}
+    .insdie1{
+        background-color:blue;
+        height: 100%;
+        width: 150px;
+        float: left;
+    }

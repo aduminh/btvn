@@ -1,0 +1,48 @@
+*:before, *:after {
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    ;
+}
+.page4container{
+    text-align: center;
+}
+.page4_head h1{
+    display: inline-block;
+}
+.page4border{
+    width: 100px;
+    height: 3px;
+    background: orange;
+    margin: 0px auto 50px;
+}
+.leftcontainer{
+    display: flex;
+    width: 70%;
+    justify-content: space-around;
+    
+    
+}
+.leftcontainer img{
+    height: auto;
+    width: 200px;
+    margin: auto 300px;
+}
+.rightcontainer{
+    width: 60%;
+    
+}
+.rightcontent{
+    display: flex;
+    align-items: center;
+}
+.rightcontent p{
+    font-size: 30px;
+    font-stretch: expanded;
+}
+.download{
+    height: 50px;
+    width: 150px;
+    object-fit: contain;
+    display: flex
+}
